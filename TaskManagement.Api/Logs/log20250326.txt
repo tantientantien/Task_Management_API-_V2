@@ -1,0 +1,160 @@
+2025-03-26 16:29:15.585 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-26 16:29:15.760 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-26 16:29:15.762 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 16:29:15.762 +07:00 [INF] Hosting environment: Development
+2025-03-26 16:29:15.762 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\Taskmanagement.api
+2025-03-26 16:29:24.201 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/login - application/json 125
+2025-03-26 16:29:24.227 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-26 16:29:24.236 +07:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2025-03-26 16:29:24.717 +07:00 [WRN] The foreign key property 'TaskItem.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-03-26 16:29:25.139 +07:00 [INF] Executed DbCommand (28ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-26 16:29:25.156 +07:00 [INF] Setting HTTP status code 401.
+2025-03-26 16:29:25.163 +07:00 [INF] Writing value of type 'ProblemDetails' as Json.
+2025-03-26 16:29:25.173 +07:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2025-03-26 16:29:25.178 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/login - 401 null application/problem+json 978.5382ms
+2025-03-26 16:42:24.998 +07:00 [INF] Application is shutting down...
+2025-03-26 16:42:34.144 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-26 16:42:34.345 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-26 16:42:34.347 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 16:42:34.347 +07:00 [INF] Hosting environment: Development
+2025-03-26 16:42:34.347 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\Taskmanagement.api
+2025-03-26 17:07:02.576 +07:00 [INF] Application is shutting down...
+2025-03-26 17:07:11.508 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-26 17:07:11.697 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-26 17:07:11.698 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 17:07:11.698 +07:00 [INF] Hosting environment: Development
+2025-03-26 17:07:11.698 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\Taskmanagement.api
+2025-03-26 17:07:13.575 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 17:07:13.604 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-26 17:07:13.615 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 17:07:13.652 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 17:07:13.660 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 17:07:13.661 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 86.8552ms
+2025-03-26 17:07:13.671 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 17:07:13.671 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 17:07:13.671 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 17:07:13.673 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.4122ms
+2025-03-26 17:07:13.675 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 17:07:13.675 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 17:07:13.678 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 17:07:13.678 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 17:07:13.679 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 17:07:13.679 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 17:07:13.679 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 8.3862ms
+2025-03-26 17:07:13.679 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 8.3856ms
+2025-03-26 17:07:13.923 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 17:07:13.928 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 17:07:13.961 +07:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-26 17:07:14.131 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 17:07:14.131 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 208.413ms
+2025-03-26 17:08:14.737 +07:00 [INF] Application is shutting down...
+2025-03-26 17:20:32.343 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-26 17:20:32.527 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-26 17:20:32.528 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 17:20:32.528 +07:00 [INF] Hosting environment: Development
+2025-03-26 17:20:32.528 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\Taskmanagement.api
+2025-03-26 17:20:54.918 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/register - application/json 67
+2025-03-26 17:20:54.943 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-26 17:20:54.952 +07:00 [INF] Executing endpoint 'HTTP: POST /api/register'
+2025-03-26 17:20:55.618 +07:00 [WRN] The foreign key property 'TaskItem.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-03-26 17:20:56.271 +07:00 [INF] Executed DbCommand (40ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-26 17:20:56.527 +07:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+2025-03-26 17:20:56.557 +07:00 [INF] Setting HTTP status code 200.
+2025-03-26 17:20:56.558 +07:00 [INF] Executed endpoint 'HTTP: POST /api/register'
+2025-03-26 17:20:56.564 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/register - 200 0 null 1646.8036ms
+2025-03-26 17:21:04.302 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/login - application/json 125
+2025-03-26 17:21:04.306 +07:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2025-03-26 17:21:04.368 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-26 17:21:04.483 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-26 17:21:04.487 +07:00 [INF] AuthenticationScheme: Identity.Bearer signed in.
+2025-03-26 17:21:04.498 +07:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2025-03-26 17:21:04.499 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/login - 200 null application/json; charset=utf-8 196.3343ms
+2025-03-26 17:21:10.435 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/login?useCookies=true - application/json 125
+2025-03-26 17:21:10.436 +07:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2025-03-26 17:21:10.465 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-26 17:21:10.539 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-26 17:21:10.543 +07:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-03-26 17:21:10.543 +07:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2025-03-26 17:21:10.544 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/login?useCookies=true - 200 0 null 108.8132ms
+2025-03-26 17:22:15.168 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/tasks - application/json 130
+2025-03-26 17:22:15.176 +07:00 [INF] Executing endpoint 'HTTP: POST /api/tasks/'
+2025-03-26 17:22:15.280 +07:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([AssigneeId], [CategoryId], [CreatedAt], [Description], [Duedate], [IsCompleted], [Title], [UserId], [UserId1])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2025-03-26 17:22:15.284 +07:00 [INF] Setting HTTP status code 201.
+2025-03-26 17:22:15.284 +07:00 [INF] Writing value of type 'TaskItem' as Json.
+2025-03-26 17:22:15.288 +07:00 [INF] Executed endpoint 'HTTP: POST /api/tasks/'
+2025-03-26 17:22:15.288 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/tasks - 201 null application/json; charset=utf-8 119.898ms
+2025-03-26 17:25:17.003 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks/1 - null null
+2025-03-26 17:25:17.006 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:25:17.007 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:25:17.193 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks/1 - 500 null application/json 190.238ms
+2025-03-26 17:25:35.830 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks/1 - null null
+2025-03-26 17:25:35.839 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:25:35.840 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:25:35.841 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks/1 - 500 null application/json 10.386ms
+2025-03-26 17:25:37.595 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks/1 - null null
+2025-03-26 17:25:37.596 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:25:37.596 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:25:37.596 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks/1 - 500 null application/json 1.1237ms
+2025-03-26 17:25:38.402 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks/1 - null null
+2025-03-26 17:25:38.403 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:25:38.403 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:25:38.404 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks/1 - 500 null application/json 1.4796ms
+2025-03-26 17:25:39.154 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks/1 - null null
+2025-03-26 17:25:39.155 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:25:39.155 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:25:39.156 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks/1 - 500 null application/json 1.6689ms
+2025-03-26 17:25:40.019 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks/1 - null null
+2025-03-26 17:25:40.020 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:25:40.020 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:25:40.021 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks/1 - 500 null application/json 1.2923ms
+2025-03-26 17:26:15.494 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks/1 - null null
+2025-03-26 17:26:15.496 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:26:15.496 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:26:15.497 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks/1 - 500 null application/json 2.2729ms
+2025-03-26 17:26:36.012 +07:00 [INF] Application is shutting down...
+2025-03-26 17:26:42.651 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-26 17:26:42.839 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-26 17:26:42.841 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 17:26:42.841 +07:00 [INF] Hosting environment: Development
+2025-03-26 17:26:42.841 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\Taskmanagement.api
+2025-03-26 17:26:44.184 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks/1 - null null
+2025-03-26 17:26:44.208 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-26 17:26:44.296 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:26:44.770 +07:00 [WRN] The foreign key property 'TaskItem.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-03-26 17:26:45.239 +07:00 [INF] Executed DbCommand (41ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-03-26 17:26:45.325 +07:00 [INF] Setting HTTP status code 200.
+2025-03-26 17:26:45.327 +07:00 [INF] Writing value of type 'TaskDataDto' as Json.
+2025-03-26 17:26:45.347 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-26 17:26:45.359 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks/1 - 200 null application/json; charset=utf-8 1175.744ms
+2025-03-26 17:29:36.162 +07:00 [INF] Application is shutting down...
