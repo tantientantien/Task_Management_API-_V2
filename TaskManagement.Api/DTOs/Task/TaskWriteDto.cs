@@ -15,6 +15,9 @@ public class TaskWriteDto
     [Range(1, int.MaxValue, ErrorMessage = "AssigneeId must be a valid positive integer.")]
     public int AssigneeId { get; set; }
 
+    [DataType(DataType.DateTime)]
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
     [Required(ErrorMessage = "Due date is required.")]
     [DataType(DataType.DateTime)]
     public DateTime Duedate { get; set; } = DateTime.UtcNow.AddDays(7);

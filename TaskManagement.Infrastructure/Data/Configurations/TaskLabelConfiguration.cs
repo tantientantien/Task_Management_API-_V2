@@ -5,7 +5,7 @@ public class TaskLabelConfiguration : IEntityTypeConfiguration<TaskLabel>
 {
     public void Configure(EntityTypeBuilder<TaskLabel> builder)
     {
-        builder.HasKey(tl => new { tl.TaskId, tl.LabelId });
+        builder.HasKey(tl => tl.Id);
 
         builder.HasOne(tl => tl.Task)
             .WithMany(t => t.TaskLabels)
