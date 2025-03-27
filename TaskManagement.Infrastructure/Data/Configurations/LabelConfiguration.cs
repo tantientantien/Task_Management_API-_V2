@@ -8,12 +8,12 @@ public class LabelConfiguration : IEntityTypeConfiguration<Label>
 
         // Seed data
         builder.HasData(
-            new Label { Id = 1, Name = "Urgent" },
-            new Label { Id = 2, Name = "Bug" },
-            new Label { Id = 3, Name = "Feature Request" },
-            new Label { Id = 4, Name = "High Priority" },
-            new Label { Id = 5, Name = "Low Priority" },
-            new Label { Id = 6, Name = "Improvement" }
+            new Label { Id = 1, Name = "Urgent", Color = "#ffb6c1" },
+            new Label { Id = 2, Name = "Bug", Color = "#ecdac5" },
+            new Label { Id = 3, Name = "Feature Request", Color = "#e198b5" },
+            new Label { Id = 4, Name = "High Priority", Color = "#ecc5e0" },
+            new Label { Id = 5, Name = "Low Priority", Color = "#d8fdc1" },
+            new Label { Id = 6, Name = "Improvement", Color = "#a08bda" }
         );
     }
 }

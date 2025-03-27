@@ -10,3 +10,4 @@ D:\Projects\TaskManagement\src\TaskManagement.Core\obj\Debug\net9.0\TaskManageme
 D:\Projects\TaskManagement\src\TaskManagement.Core\obj\Debug\net9.0\refint\TaskManagement.Core.dll
 D:\Projects\TaskManagement\src\TaskManagement.Core\obj\Debug\net9.0\TaskManagement.Core.pdb
 D:\Projects\TaskManagement\src\TaskManagement.Core\obj\Debug\net9.0\ref\TaskManagement.Core.dll
+D:\Projects\TaskManagement\src\TaskManagement.Core\obj\Debug\net9.0\TaskManagement.Core.sourcelink.json

@@ -1,5 +1,8 @@
+using System.ComponentModel;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
+
+namespace TaskManagement.Api.Service;
 
 public class GetCurrentUser
 {
@@ -39,4 +42,5 @@ public class GetCurrentUser
 
         return await _userManager.GetRolesAsync(user);
     }
+
 }

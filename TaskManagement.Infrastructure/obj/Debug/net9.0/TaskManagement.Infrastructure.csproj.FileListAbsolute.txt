@@ -13,3 +13,4 @@ D:\Projects\TaskManagement\src\TaskManagement.Infrastructure\obj\Debug\net9.0\Ta
 D:\Projects\TaskManagement\src\TaskManagement.Infrastructure\obj\Debug\net9.0\refint\TaskManagement.Infrastructure.dll
 D:\Projects\TaskManagement\src\TaskManagement.Infrastructure\obj\Debug\net9.0\TaskManagement.Infrastructure.pdb
 D:\Projects\TaskManagement\src\TaskManagement.Infrastructure\obj\Debug\net9.0\ref\TaskManagement.Infrastructure.dll
+D:\Projects\TaskManagement\src\TaskManagement.Infrastructure\obj\Debug\net9.0\TaskManagement.Infrastructure.sourcelink.json

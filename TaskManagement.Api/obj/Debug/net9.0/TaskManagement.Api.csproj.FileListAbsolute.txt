@@ -186,3 +186,4 @@ D:\Projects\TaskManagement\src\Taskmanagement.api\bin\Debug\net9.0\Serilog.Sinks
 D:\Projects\TaskManagement\src\Taskmanagement.api\bin\Debug\net9.0\Serilog.Sinks.File.dll
 D:\Projects\TaskManagement\src\Taskmanagement.api\bin\Debug\net9.0\Newtonsoft.Json.dll
 D:\Projects\TaskManagement\src\Taskmanagement.api\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+D:\Projects\TaskManagement\src\TaskManagement.api\obj\Debug\net9.0\TaskManagement.Api.sourcelink.json

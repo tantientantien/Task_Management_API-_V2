@@ -82,31 +82,37 @@ namespace TaskManagement.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
+                            Color = "#ffb6c1",
                             Name = "Urgent"
                         },
                         new
                         {
                             Id = 2,
+                            Color = "#ecdac5",
                             Name = "Bug"
                         },
                         new
                         {
                             Id = 3,
+                            Color = "#e198b5",
                             Name = "Feature Request"
                         },
                         new
                         {
                             Id = 4,
+                            Color = "#ecc5e0",
                             Name = "High Priority"
                         },
                         new
                         {
                             Id = 5,
+                            Color = "#d8fdc1",
                             Name = "Low Priority"
                         },
                         new
                         {
                             Id = 6,
+                            Color = "#a08bda",
                             Name = "Improvement"
                         });
                 });
@@ -364,17 +370,23 @@ namespace TaskManagement.Infrastructure.Migrations
 
             modelBuilder.Entity("TaskLabel", b =>
                 {
-                    b.Property<int>("TaskId")
-                        .HasColumnType("int")
-                        .HasColumnOrder(0);
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("LabelId")
-                        .HasColumnType("int")
-                        .HasColumnOrder(1);
+                        .HasColumnType("int");
 
-                    b.HasKey("TaskId", "LabelId");
+                    b.Property<int>("TaskId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("LabelId");
+
+                    b.HasIndex("TaskId");
 
                     b.ToTable("TaskLabels");
                 });
