@@ -18,7 +18,7 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
         // string cacheKey = $"{typeof(TEntity).Name}:{id}";
         // return await _cacheService.GetOrSetAsync(cacheKey, async () =>
         // {
-            return await _context.Set<TEntity>().FindAsync(id);
+        return await _context.Set<TEntity>().FindAsync(id);
         // }, TimeSpan.FromMinutes(10));
     }
 
@@ -27,13 +27,21 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
         // string cacheKey = $"{typeof(TEntity).Name}:All";
         // return await _cacheService.GetOrSetAsync(cacheKey, async () =>
         // {
-            return await _context.Set<TEntity>().AsNoTracking().ToListAsync();
+        return await _context.Set<TEntity>().AsNoTracking().ToListAsync();
         // }, TimeSpan.FromMinutes(10));
     }
 
-    public async Task<IEnumerable<TEntity>> FindAsync(Expression<Func<TEntity, bool>> predicate)
+
+    public async Task<IEnumerable<TEntity>> FindAsync(Expression<Func<TEntity, bool>> predicate, params Expression<Func<TEntity, object>>[] includes)
     {
-        return await _context.Set<TEntity>().Where(predicate).ToListAsync();
+        IQueryable<TEntity> query = _context.Set<TEntity>().Where(predicate);
+
+        foreach (var include in includes)
+        {
+            query = query.Include(include);
+        }
+
+        return await query.ToListAsync();
     }
 
     public async Task AddAsync(TEntity entity)

@@ -158,3 +158,635 @@ WHERE [t].[Id] = @__p_0
 2025-03-26 17:26:45.347 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/{id:int}'
 2025-03-26 17:26:45.359 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks/1 - 200 null application/json; charset=utf-8 1175.744ms
 2025-03-26 17:29:36.162 +07:00 [INF] Application is shutting down...
+2025-03-26 22:06:41.160 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-26 22:06:41.376 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-26 22:06:41.377 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 22:06:41.377 +07:00 [INF] Hosting environment: Development
+2025-03-26 22:06:41.377 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.api
+2025-03-26 22:06:41.986 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:06:41.996 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 11.2683ms
+2025-03-26 22:06:43.025 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/favicon.ico - null null
+2025-03-26 22:06:43.060 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-26 22:06:43.077 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:06:43.077 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:06:43.079 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/favicon.ico - 404 0 null 54.9742ms
+2025-03-26 22:06:43.081 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5179/favicon.ico, Response status code: 404
+2025-03-26 22:06:50.472 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-26 22:06:50.475 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:06:50.476 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:06:50.480 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-26 22:06:50.481 +07:00 [INF] AuthenticationScheme: Identity.Bearer was challenged.
+2025-03-26 22:06:50.482 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 401 0 null 9.8405ms
+2025-03-26 22:07:16.265 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:07:16.278 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:16.278 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:16.279 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:07:16.310 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:07:16.315 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:07:16.315 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 50.5039ms
+2025-03-26 22:07:16.323 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:07:16.323 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:07:16.323 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:07:16.323 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3294ms
+2025-03-26 22:07:16.325 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:16.325 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:16.325 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:16.325 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:16.325 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:07:16.325 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:07:16.329 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:07:16.329 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:07:16.329 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:07:16.329 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:07:16.329 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 6.31ms
+2025-03-26 22:07:16.329 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 6.4813ms
+2025-03-26 22:07:16.457 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:07:16.458 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:16.458 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:16.458 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:07:16.470 +07:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-26 22:07:16.607 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:07:16.607 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 150.2421ms
+2025-03-26 22:07:21.731 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:07:21.731 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:21.731 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:21.731 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:07:21.732 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:07:21.733 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:07:21.733 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 2.1129ms
+2025-03-26 22:07:21.748 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:07:21.748 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:07:21.748 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:07:21.748 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.5643ms
+2025-03-26 22:07:21.748 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:21.748 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:21.748 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:21.749 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:21.749 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:07:21.749 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:07:21.749 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:07:21.749 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:07:21.749 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:07:21.749 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:07:21.749 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 1.2183ms
+2025-03-26 22:07:21.749 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 1.07ms
+2025-03-26 22:07:21.940 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:07:21.941 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:21.941 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:21.942 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:07:21.952 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:07:21.952 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 12.2096ms
+2025-03-26 22:07:25.382 +07:00 [INF] Application is shutting down...
+2025-03-26 22:07:34.210 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-26 22:07:34.390 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-26 22:07:34.391 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 22:07:34.391 +07:00 [INF] Hosting environment: Development
+2025-03-26 22:07:34.391 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.api
+2025-03-26 22:07:41.595 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:07:41.619 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-26 22:07:41.629 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:41.629 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:41.631 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:07:41.657 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:07:41.662 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:07:41.663 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 69.4449ms
+2025-03-26 22:07:41.674 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:07:41.674 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:07:41.674 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:07:41.676 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.1022ms
+2025-03-26 22:07:41.678 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:41.678 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:41.678 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:41.678 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:41.678 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:07:41.678 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:07:41.681 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:07:41.681 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:07:41.682 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:07:41.682 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:07:41.682 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 8.1554ms
+2025-03-26 22:07:41.682 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 8.1846ms
+2025-03-26 22:07:41.798 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:07:41.799 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:41.799 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:41.799 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:07:41.815 +07:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-26 22:07:41.966 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:07:41.966 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 168.2988ms
+2025-03-26 22:07:44.063 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-26 22:07:44.072 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:44.072 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:44.075 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-26 22:07:44.076 +07:00 [INF] AuthenticationScheme: Identity.Bearer was challenged.
+2025-03-26 22:07:44.076 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 401 0 null 12.6588ms
+2025-03-26 22:07:45.276 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-26 22:07:45.277 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:45.277 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:07:45.278 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-26 22:07:45.278 +07:00 [INF] AuthenticationScheme: Identity.Bearer was challenged.
+2025-03-26 22:07:45.278 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 401 0 null 2.6882ms
+2025-03-26 22:08:05.653 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:08:05.654 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:05.655 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:05.655 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:08:05.657 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:08:05.658 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:08:05.658 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 5.4139ms
+2025-03-26 22:08:05.682 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:08:05.682 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:08:05.682 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:08:05.683 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.829ms
+2025-03-26 22:08:05.683 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:05.683 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:05.683 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:05.683 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:05.683 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:08:05.683 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:08:05.683 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:08:05.683 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:08:05.683 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:08:05.683 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:08:05.683 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.9183ms
+2025-03-26 22:08:05.683 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 1.5029ms
+2025-03-26 22:08:05.817 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:08:05.817 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:05.817 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:05.817 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:08:05.828 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:08:05.828 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 11.528ms
+2025-03-26 22:08:13.478 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:08:13.478 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:13.479 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:13.479 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:08:13.479 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:08:13.479 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:08:13.479 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 1.0687ms
+2025-03-26 22:08:13.494 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:08:13.494 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:08:13.494 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:08:13.495 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.4466ms
+2025-03-26 22:08:13.496 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:13.496 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:13.497 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:13.497 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:13.497 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:08:13.497 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:08:13.497 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:08:13.497 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:08:13.497 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:08:13.497 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:08:13.498 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 3.2849ms
+2025-03-26 22:08:13.498 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 3.285ms
+2025-03-26 22:08:13.613 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:08:13.613 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:13.613 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:13.613 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:08:13.618 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:08:13.618 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 5.1205ms
+2025-03-26 22:08:22.514 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:08:22.514 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:22.514 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:22.514 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:08:22.514 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:08:22.515 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:08:22.515 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 0.7637ms
+2025-03-26 22:08:22.530 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:08:22.530 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.4205ms
+2025-03-26 22:08:22.530 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:08:22.531 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:08:22.531 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:22.531 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:22.531 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:22.531 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:22.531 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:08:22.531 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:08:22.531 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:08:22.531 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:08:22.531 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:08:22.531 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:08:22.531 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.4342ms
+2025-03-26 22:08:22.531 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.5396ms
+2025-03-26 22:08:22.643 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:08:22.644 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:22.644 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:08:22.644 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:08:22.646 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:08:22.646 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 2.3495ms
+2025-03-26 22:08:35.240 +07:00 [INF] Application is shutting down...
+2025-03-26 22:08:41.253 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-26 22:08:41.412 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-26 22:08:41.414 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 22:08:41.414 +07:00 [INF] Hosting environment: Development
+2025-03-26 22:08:41.414 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.api
+2025-03-26 22:09:02.270 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:09:02.291 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-26 22:09:02.303 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:02.303 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:02.305 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:09:02.331 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:09:02.333 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:09:02.334 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 923 text/html 65.6871ms
+2025-03-26 22:09:02.344 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:09:02.344 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:09:02.347 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:02.347 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:02.347 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:02.347 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:02.347 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:09:02.347 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:09:02.351 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:09:02.351 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:09:02.351 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:09:02.351 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:09:02.351 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 8.0265ms
+2025-03-26 22:09:02.351 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 8.0265ms
+2025-03-26 22:09:02.480 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:09:02.482 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:02.482 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:02.482 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:09:02.500 +07:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-26 22:09:02.663 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:09:02.664 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 183.9798ms
+2025-03-26 22:09:04.340 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:09:04.349 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:04.349 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:04.349 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:09:04.352 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:09:04.352 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:09:04.352 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 923 text/html 12.5873ms
+2025-03-26 22:09:04.363 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:09:04.363 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:09:04.363 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:04.363 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:04.363 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:04.363 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:04.363 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:09:04.363 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:09:04.363 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:09:04.363 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:09:04.363 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:09:04.363 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:09:04.363 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 1.0175ms
+2025-03-26 22:09:04.364 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 1.0122ms
+2025-03-26 22:09:04.509 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:09:04.510 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:04.510 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:04.510 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:09:04.534 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:09:04.534 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 24.4908ms
+2025-03-26 22:09:22.302 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/login?useCookies=true - application/json 125
+2025-03-26 22:09:22.303 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:22.303 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:22.303 +07:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2025-03-26 22:09:22.783 +07:00 [WRN] The foreign key property 'TaskItem.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-03-26 22:09:23.237 +07:00 [INF] Executed DbCommand (36ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-26 22:09:23.424 +07:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-26 22:09:23.582 +07:00 [INF] Executed DbCommand (41ms) [Parameters=[@p14='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+OUTPUT 1
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+2025-03-26 22:09:23.596 +07:00 [INF] Setting HTTP status code 401.
+2025-03-26 22:09:23.598 +07:00 [INF] Writing value of type 'ProblemDetails' as Json.
+2025-03-26 22:09:23.605 +07:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2025-03-26 22:09:23.611 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/login?useCookies=true - 401 null application/problem+json 1309.2659ms
+2025-03-26 22:09:40.477 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/login?useCookies=true - application/json 125
+2025-03-26 22:09:40.479 +07:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:40.479 +07:00 [INF] Identity.BearerAndApplication was not authenticated. Failure message: Unprotect ticket failed
+2025-03-26 22:09:40.479 +07:00 [INF] Executing endpoint 'HTTP: POST /api/login'
+2025-03-26 22:09:40.540 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-26 22:09:40.612 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-26 22:09:40.620 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@p14='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+OUTPUT 1
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+2025-03-26 22:09:40.657 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-26 22:09:40.664 +07:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-03-26 22:09:40.665 +07:00 [INF] Executed endpoint 'HTTP: POST /api/login'
+2025-03-26 22:09:40.665 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/login?useCookies=true - 200 0 null 187.6701ms
+2025-03-26 22:09:50.096 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-26 22:09:50.109 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-26 22:09:50.180 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+FROM [Tasks] AS [t]
+2025-03-26 22:09:50.190 +07:00 [INF] Setting HTTP status code 200.
+2025-03-26 22:09:50.191 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-26 22:09:50.194 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-26 22:09:50.195 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 98.3995ms
+2025-03-26 22:10:24.475 +07:00 [INF] Application is shutting down...
+2025-03-26 22:10:39.588 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-26 22:10:39.769 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-26 22:10:39.771 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 22:10:39.771 +07:00 [INF] Hosting environment: Development
+2025-03-26 22:10:39.771 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.api
+2025-03-26 22:10:52.563 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:10:52.594 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-26 22:10:52.604 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:10:52.645 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:10:52.654 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:10:52.655 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 93.7917ms
+2025-03-26 22:10:52.672 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:10:52.672 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:10:52.672 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:10:52.674 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.9916ms
+2025-03-26 22:10:52.677 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:10:52.677 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:10:52.683 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:10:52.683 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:10:52.683 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:10:52.683 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:10:52.683 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 11.9627ms
+2025-03-26 22:10:52.683 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 11.9623ms
+2025-03-26 22:10:52.900 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:10:52.901 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:10:52.923 +07:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-26 22:10:53.075 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:10:53.075 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 174.9474ms
+2025-03-26 22:10:57.525 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-26 22:10:57.529 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-26 22:10:57.531 +07:00 [INF] AuthenticationScheme: Identity.Bearer was challenged.
+2025-03-26 22:10:57.531 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 401 0 null 5.3409ms
+2025-03-26 22:10:59.134 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-26 22:10:59.136 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-26 22:10:59.136 +07:00 [INF] AuthenticationScheme: Identity.Bearer was challenged.
+2025-03-26 22:10:59.136 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 401 0 null 2.0281ms
+2025-03-26 22:11:00.148 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-26 22:11:00.150 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-26 22:11:00.150 +07:00 [INF] AuthenticationScheme: Identity.Bearer was challenged.
+2025-03-26 22:11:00.150 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 401 0 null 1.9295ms
+2025-03-26 22:11:01.877 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-26 22:11:01.877 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-26 22:11:01.877 +07:00 [INF] AuthenticationScheme: Identity.Bearer was challenged.
+2025-03-26 22:11:01.877 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 401 0 null 0.5939ms
+2025-03-26 22:11:31.709 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:11:31.709 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:11:31.711 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:11:31.711 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:11:31.712 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 2.8576ms
+2025-03-26 22:11:31.726 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:11:31.726 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:11:31.726 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:11:31.727 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:11:31.727 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:11:31.727 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:11:31.727 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:11:31.727 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:11:31.727 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:11:31.727 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.4057ms
+2025-03-26 22:11:31.727 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.6223ms
+2025-03-26 22:11:31.735 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 9.0034ms
+2025-03-26 22:11:31.873 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:11:31.873 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:11:31.885 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:11:31.885 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 12.203ms
+2025-03-26 22:11:36.482 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:11:36.482 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:11:36.483 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:11:36.483 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:11:36.483 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 0.9541ms
+2025-03-26 22:11:36.492 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:11:36.492 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:11:36.492 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:11:36.492 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2526ms
+2025-03-26 22:11:36.492 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:11:36.492 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:11:36.492 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:11:36.492 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:11:36.492 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:11:36.492 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:11:36.492 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.424ms
+2025-03-26 22:11:36.492 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.464ms
+2025-03-26 22:11:36.631 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:11:36.632 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:11:36.639 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:11:36.639 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 8.3515ms
+2025-03-26 22:11:48.711 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:11:48.711 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:11:48.712 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:11:48.712 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:11:48.712 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 1.2003ms
+2025-03-26 22:11:48.726 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:11:48.726 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:11:48.726 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:11:48.727 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.1952ms
+2025-03-26 22:11:48.727 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:11:48.727 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:11:48.727 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:11:48.727 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:11:48.727 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.6493ms
+2025-03-26 22:11:48.727 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:11:48.727 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:11:48.727 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.8238ms
+2025-03-26 22:11:48.921 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:11:48.921 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:11:48.930 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:11:48.930 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 9.176ms
+2025-03-26 22:11:51.215 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:11:51.216 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:11:51.216 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:11:51.216 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:11:51.216 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 0.5564ms
+2025-03-26 22:11:51.229 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:11:51.229 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:11:51.229 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:11:51.230 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2386ms
+2025-03-26 22:11:51.230 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:11:51.230 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:11:51.230 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:11:51.230 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:11:51.230 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:11:51.230 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:11:51.230 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.9694ms
+2025-03-26 22:11:51.230 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.9193ms
+2025-03-26 22:11:51.350 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:11:51.350 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:11:51.352 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:11:51.353 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 3.0421ms
+2025-03-26 22:12:01.607 +07:00 [INF] Application is shutting down...
+2025-03-26 22:12:11.324 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-26 22:12:11.512 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-26 22:12:11.513 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 22:12:11.513 +07:00 [INF] Hosting environment: Development
+2025-03-26 22:12:11.513 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.api
+2025-03-26 22:12:13.188 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:12:13.219 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-26 22:12:13.229 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:12:13.255 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:12:13.262 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:12:13.264 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 77.5694ms
+2025-03-26 22:12:13.271 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:12:13.271 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:12:13.272 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:12:13.274 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 1.4113ms
+2025-03-26 22:12:13.275 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:12:13.275 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:12:13.280 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:12:13.280 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:12:13.280 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:12:13.280 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:12:13.280 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 9.5063ms
+2025-03-26 22:12:13.280 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 9.5768ms
+2025-03-26 22:12:13.402 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:12:13.403 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:12:13.416 +07:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-26 22:12:13.569 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:12:13.569 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 167.3691ms
+2025-03-26 22:13:05.593 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:13:05.594 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:13:05.596 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:13:05.596 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:13:05.596 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 3.2841ms
+2025-03-26 22:13:05.605 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:13:05.605 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:13:05.605 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:13:05.605 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:13:05.606 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:13:05.606 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2631ms
+2025-03-26 22:13:05.606 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:13:05.606 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:13:05.606 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.6404ms
+2025-03-26 22:13:05.606 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:13:05.606 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:13:05.606 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.3709ms
+2025-03-26 22:13:05.753 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:13:05.754 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:13:05.760 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:13:05.760 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 7.2273ms
+2025-03-26 22:13:11.380 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:13:11.381 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:13:11.381 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:13:11.381 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:13:11.381 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 0.8808ms
+2025-03-26 22:13:11.388 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:13:11.388 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:13:11.388 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:13:11.388 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:13:11.388 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:13:11.388 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:13:11.388 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:13:11.388 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:13:11.388 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:13:11.388 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.5208ms
+2025-03-26 22:13:11.388 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.5227ms
+2025-03-26 22:13:11.396 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 8.306ms
+2025-03-26 22:13:11.522 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:13:11.522 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:13:11.530 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:13:11.530 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 7.7903ms
+2025-03-26 22:13:18.099 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-26 22:13:18.099 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:13:18.099 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-26 22:13:18.100 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-26 22:13:18.100 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 1.5125ms
+2025-03-26 22:13:18.119 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-26 22:13:18.119 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-26 22:13:18.119 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-26 22:13:18.119 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3474ms
+2025-03-26 22:13:18.119 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:13:18.119 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:13:18.120 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:13:18.120 +07:00 [INF] Setting HTTP status code 304.
+2025-03-26 22:13:18.120 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-26 22:13:18.120 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-26 22:13:18.120 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.6849ms
+2025-03-26 22:13:18.120 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.6221ms
+2025-03-26 22:13:18.248 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-26 22:13:18.248 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:13:18.251 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-26 22:13:18.251 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 2.8938ms
+2025-03-26 22:14:06.939 +07:00 [INF] Application is shutting down...
+2025-03-26 22:25:27.078 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-26 22:25:27.282 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-26 22:25:27.284 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 22:25:27.284 +07:00 [INF] Hosting environment: Development
+2025-03-26 22:25:27.284 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.api
+2025-03-26 22:25:29.372 +07:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5179/api/tasks/1 - text/plain;charset=UTF-8 0
+2025-03-26 22:25:29.399 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-26 22:25:29.409 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-26 22:25:29.411 +07:00 [INF] AuthenticationScheme: Identity.Bearer was challenged.
+2025-03-26 22:25:29.415 +07:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5179/api/tasks/1 - 401 0 null 43.4242ms
+2025-03-26 22:25:49.503 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/users/login - application/json 125
+2025-03-26 22:25:49.507 +07:00 [INF] Executing endpoint 'HTTP: POST /api/users/login'
+2025-03-26 22:25:50.060 +07:00 [WRN] The foreign key property 'TaskItem.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-03-26 22:25:50.616 +07:00 [INF] Executed DbCommand (46ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-26 22:25:50.892 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-26 22:25:50.900 +07:00 [INF] AuthenticationScheme: Identity.Bearer signed in.
+2025-03-26 22:25:50.919 +07:00 [INF] Executed endpoint 'HTTP: POST /api/users/login'
+2025-03-26 22:25:50.927 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/users/login - 200 null application/json; charset=utf-8 1423.6137ms
+2025-03-26 22:25:54.387 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/users/login?useCookies=true - application/json 125
+2025-03-26 22:25:54.390 +07:00 [INF] Executing endpoint 'HTTP: POST /api/users/login'
+2025-03-26 22:25:54.442 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-26 22:25:54.514 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-26 22:25:54.518 +07:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-03-26 22:25:54.518 +07:00 [INF] Executed endpoint 'HTTP: POST /api/users/login'
+2025-03-26 22:25:54.518 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/users/login?useCookies=true - 200 0 null 130.881ms
+2025-03-26 22:26:01.776 +07:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5179/api/tasks/1 - text/plain;charset=UTF-8 0
+2025-03-26 22:26:01.784 +07:00 [INF] Executing endpoint 'HTTP: DELETE /api/tasks/{id:int}'
+2025-03-26 22:26:01.823 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-03-26 22:26:01.914 +07:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Tasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-03-26 22:26:01.925 +07:00 [INF] Setting HTTP status code 204.
+2025-03-26 22:26:01.925 +07:00 [INF] Executed endpoint 'HTTP: DELETE /api/tasks/{id:int}'
+2025-03-26 22:26:01.925 +07:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5179/api/tasks/1 - 204 null null 148.8689ms
+2025-03-26 22:26:09.547 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-26 22:26:09.556 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-26 22:26:09.617 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+FROM [Tasks] AS [t]
+2025-03-26 22:26:09.618 +07:00 [INF] Setting HTTP status code 204.
+2025-03-26 22:26:09.618 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-26 22:26:09.619 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 204 null null 71.8121ms
+2025-03-26 22:26:12.830 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-26 22:26:12.838 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-26 22:26:12.852 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+FROM [Tasks] AS [t]
+2025-03-26 22:26:12.853 +07:00 [INF] Setting HTTP status code 204.
+2025-03-26 22:26:12.853 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-26 22:26:12.853 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 204 null null 22.6654ms
+2025-03-26 23:22:25.398 +07:00 [INF] Application is shutting down...

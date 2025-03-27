@@ -1,5 +1,6 @@
-
 using TaskManagement.Api.Middleware;
+
+namespace TaskManagement.Api.Extensions;
 
 public static class GlobalExceptionHandlerMiddlewareExtensions
 {
