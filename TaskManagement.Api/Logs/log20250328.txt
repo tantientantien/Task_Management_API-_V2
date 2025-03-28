@@ -1,0 +1,819 @@
+2025-03-28 08:15:55.518 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-28 08:15:55.718 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-28 08:15:55.720 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-28 08:15:55.720 +07:00 [INF] Hosting environment: Development
+2025-03-28 08:15:55.720 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.Api
+2025-03-28 08:16:03.111 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:16:03.211 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-28 08:16:03.933 +07:00 [WRN] The foreign key property 'TaskItem.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-03-28 08:16:04.491 +07:00 [INF] Executed DbCommand (39ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-03-28 08:16:04.594 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-28 08:16:04.613 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-28 08:16:04.618 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:16:04.644 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:16:04.653 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:16:04.658 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:16:04.660 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 1551.8935ms
+2025-03-28 08:16:04.660 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 1.8789ms
+2025-03-28 08:16:05.360 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/favicon.ico - null null
+2025-03-28 08:16:05.380 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/favicon.ico - 404 0 null 19.5433ms
+2025-03-28 08:16:05.380 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5179/favicon.ico, Response status code: 404
+2025-03-28 08:16:06.856 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:16:06.876 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:16:06.878 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:16:06.878 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:16:06.878 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 22.0056ms
+2025-03-28 08:16:06.889 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-28 08:16:06.889 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:16:06.890 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-28 08:16:06.890 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3268ms
+2025-03-28 08:16:06.902 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:16:06.902 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:16:06.907 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:16:06.907 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:16:06.907 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:16:06.907 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:16:06.907 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 18.3943ms
+2025-03-28 08:16:06.907 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 17.9079ms
+2025-03-28 08:16:07.010 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-28 08:16:07.011 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:16:07.035 +07:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-28 08:16:07.212 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:16:07.212 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 202.2446ms
+2025-03-28 08:16:19.097 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/comments/ - null null
+2025-03-28 08:16:19.097 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/comments/ - 404 0 null 0.8833ms
+2025-03-28 08:16:19.098 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5179/api/comments/, Response status code: 404
+2025-03-28 08:16:24.016 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/comments/9 - null null
+2025-03-28 08:16:24.024 +07:00 [INF] Executing endpoint 'HTTP: GET /api/comments/{taskId:int}'
+2025-03-28 08:16:24.167 +07:00 [INF] Executed DbCommand (8ms) [Parameters=[@__taskId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Content], [t].[CreatedAt], [t].[TaskId], [t].[UserId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [TaskComments] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[UserId] = [a].[Id]
+WHERE [t].[TaskId] = @__taskId_0
+2025-03-28 08:16:24.191 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:16:24.193 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:16:24.199 +07:00 [INF] Executed endpoint 'HTTP: GET /api/comments/{taskId:int}'
+2025-03-28 08:16:24.200 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/comments/9 - 200 null application/json; charset=utf-8 183.4535ms
+2025-03-28 08:16:26.655 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:16:26.656 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:16:26.656 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:16:26.657 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:16:26.657 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 1.2558ms
+2025-03-28 08:16:26.666 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:16:26.666 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-28 08:16:26.666 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-28 08:16:26.666 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2899ms
+2025-03-28 08:16:26.666 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:16:26.666 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:16:26.667 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:16:26.667 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:16:26.667 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:16:26.667 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:16:26.667 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.9686ms
+2025-03-28 08:16:26.667 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 1.0563ms
+2025-03-28 08:16:26.775 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-28 08:16:26.776 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:16:26.783 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:16:26.783 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 7.8195ms
+2025-03-28 08:16:32.568 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/comments/9 - null null
+2025-03-28 08:16:32.570 +07:00 [INF] Executing endpoint 'HTTP: GET /api/comments/{taskId:int}'
+2025-03-28 08:16:32.599 +07:00 [INF] Executed DbCommand (8ms) [Parameters=[@__taskId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Content], [t].[CreatedAt], [t].[TaskId], [t].[UserId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [TaskComments] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[UserId] = [a].[Id]
+WHERE [t].[TaskId] = @__taskId_0
+2025-03-28 08:16:32.600 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:16:32.600 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:16:32.601 +07:00 [INF] Executed endpoint 'HTTP: GET /api/comments/{taskId:int}'
+2025-03-28 08:16:32.601 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/comments/9 - 200 null application/json; charset=utf-8 33.1831ms
+2025-03-28 08:17:38.198 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:17:38.199 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:17:38.199 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:17:38.199 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:17:38.199 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 0.9479ms
+2025-03-28 08:17:38.212 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:17:38.212 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2164ms
+2025-03-28 08:17:38.212 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-28 08:17:38.212 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-28 08:17:38.213 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:17:38.213 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:17:38.213 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:17:38.213 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:17:38.213 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:17:38.213 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:17:38.213 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.8194ms
+2025-03-28 08:17:38.213 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.7104ms
+2025-03-28 08:17:38.390 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-28 08:17:38.392 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:17:38.408 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:17:38.408 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 18.5406ms
+2025-03-28 08:17:40.046 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:17:40.046 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:17:40.047 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:17:40.047 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:17:40.047 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 1.2689ms
+2025-03-28 08:17:40.054 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-28 08:17:40.054 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-28 08:17:40.054 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:17:40.054 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.1862ms
+2025-03-28 08:17:40.054 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:17:40.054 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:17:40.054 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:17:40.054 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:17:40.054 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:17:40.054 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:17:40.054 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.6515ms
+2025-03-28 08:17:40.054 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.6515ms
+2025-03-28 08:17:40.251 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-28 08:17:40.252 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:17:40.261 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:17:40.261 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 10.0088ms
+2025-03-28 08:17:43.738 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:17:43.739 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:17:43.739 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:17:43.739 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:17:43.739 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 1.2704ms
+2025-03-28 08:17:43.752 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-28 08:17:43.752 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:17:43.752 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-28 08:17:43.752 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2453ms
+2025-03-28 08:17:43.753 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:17:43.753 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:17:43.753 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:17:43.753 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:17:43.753 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:17:43.753 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:17:43.753 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 1.1506ms
+2025-03-28 08:17:43.753 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 1.1623ms
+2025-03-28 08:17:43.907 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-28 08:17:43.908 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:17:43.915 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:17:43.915 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 7.5178ms
+2025-03-28 08:17:55.294 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:17:55.294 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:17:55.295 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:17:55.295 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:17:55.295 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 1.213ms
+2025-03-28 08:17:55.306 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:17:55.307 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3235ms
+2025-03-28 08:17:55.307 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-28 08:17:55.307 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-28 08:17:55.308 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:17:55.308 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:17:55.308 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:17:55.308 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:17:55.308 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:17:55.308 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:17:55.308 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.8809ms
+2025-03-28 08:17:55.308 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.9894ms
+2025-03-28 08:17:55.457 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-28 08:17:55.458 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:17:55.461 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:17:55.461 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 3.8666ms
+2025-03-28 08:18:03.843 +07:00 [INF] Application is shutting down...
+2025-03-28 08:18:18.774 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-28 08:18:18.986 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-28 08:18:18.987 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-28 08:18:18.987 +07:00 [INF] Hosting environment: Development
+2025-03-28 08:18:18.987 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.Api
+2025-03-28 08:18:52.748 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:18:52.786 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-28 08:18:52.873 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:18:53.342 +07:00 [WRN] The foreign key property 'TaskItem.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-03-28 08:18:53.726 +07:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+FROM [Tasks] AS [t]
+2025-03-28 08:18:53.758 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:18:53.766 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:18:53.780 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:18:53.791 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 1043.8061ms
+2025-03-28 08:23:29.617 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks/9 - null null
+2025-03-28 08:23:29.635 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-28 08:23:29.788 +07:00 [INF] Executed DbCommand (18ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-03-28 08:23:29.824 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:23:29.825 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:23:29.826 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/{id:int}'
+2025-03-28 08:23:29.827 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks/9 - 200 null application/json; charset=utf-8 209.8992ms
+2025-03-28 08:24:19.203 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasklabels/9 - null null
+2025-03-28 08:24:19.219 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasklabels/{taskId:int}'
+2025-03-28 08:24:19.275 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[@__taskId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[LabelId], [t].[TaskId], [l].[Id], [l].[Color], [l].[Name]
+FROM [TaskLabels] AS [t]
+INNER JOIN [Labels] AS [l] ON [t].[LabelId] = [l].[Id]
+WHERE [t].[TaskId] = @__taskId_0
+2025-03-28 08:24:19.300 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:24:19.300 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:24:19.301 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasklabels/{taskId:int}'
+2025-03-28 08:24:19.301 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasklabels/9 - 200 null application/json; charset=utf-8 97.9421ms
+2025-03-28 08:27:35.789 +07:00 [INF] Application is shutting down...
+2025-03-28 08:27:43.737 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-28 08:27:43.958 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-28 08:27:43.959 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-28 08:27:43.959 +07:00 [INF] Hosting environment: Development
+2025-03-28 08:27:43.959 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.Api
+2025-03-28 08:27:54.135 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:27:54.185 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-28 08:27:54.290 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:27:54.744 +07:00 [WRN] The foreign key property 'TaskItem.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-03-28 08:27:55.214 +07:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+FROM [Tasks] AS [t]
+2025-03-28 08:27:55.338 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:27:55.355 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:27:55.394 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:27:55.412 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 1277.6585ms
+2025-03-28 08:34:26.162 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:34:26.185 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:34:26.213 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:34:26.218 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:34:26.219 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 56.9155ms
+2025-03-28 08:34:26.227 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-28 08:34:26.227 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:34:26.229 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-28 08:34:26.230 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.4652ms
+2025-03-28 08:34:26.245 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:34:26.245 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:34:26.249 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:34:26.249 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:34:26.250 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:34:26.250 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:34:26.250 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 23.4095ms
+2025-03-28 08:34:26.250 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 21.2751ms
+2025-03-28 08:34:26.510 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-28 08:34:26.514 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:34:26.554 +07:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-28 08:34:26.698 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:34:26.698 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 188.325ms
+2025-03-28 08:34:29.584 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:34:29.586 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:29.719 +07:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-28 08:34:29.749 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM [Tasks] AS [t]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t].[Id] = [t1].[TaskId]
+ORDER BY [t].[Id], [t0].[Id]
+2025-03-28 08:34:29.800 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:34:29.801 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:34:29.802 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:29.802 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 218.3425ms
+2025-03-28 08:34:33.710 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:34:33.711 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:33.742 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM [Tasks] AS [t]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t].[Id] = [t1].[TaskId]
+ORDER BY [t].[Id], [t0].[Id]
+2025-03-28 08:34:33.744 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:34:33.744 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:34:33.744 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:33.744 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 34.1016ms
+2025-03-28 08:34:34.226 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:34:34.226 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:34.253 +07:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM [Tasks] AS [t]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t].[Id] = [t1].[TaskId]
+ORDER BY [t].[Id], [t0].[Id]
+2025-03-28 08:34:34.255 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:34:34.255 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:34:34.255 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:34.255 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 29.5536ms
+2025-03-28 08:34:34.584 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:34:34.584 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:34.592 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM [Tasks] AS [t]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t].[Id] = [t1].[TaskId]
+ORDER BY [t].[Id], [t0].[Id]
+2025-03-28 08:34:34.593 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:34:34.593 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:34:34.593 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:34.594 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 9.915ms
+2025-03-28 08:34:34.869 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:34:34.870 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:34.874 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM [Tasks] AS [t]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t].[Id] = [t1].[TaskId]
+ORDER BY [t].[Id], [t0].[Id]
+2025-03-28 08:34:34.875 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:34:34.875 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:34:34.875 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:34.875 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 6.2846ms
+2025-03-28 08:34:35.270 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:34:35.271 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:35.280 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM [Tasks] AS [t]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t].[Id] = [t1].[TaskId]
+ORDER BY [t].[Id], [t0].[Id]
+2025-03-28 08:34:35.281 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:34:35.281 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:34:35.282 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:35.282 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 11.6371ms
+2025-03-28 08:34:35.786 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:34:35.787 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:35.796 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM [Tasks] AS [t]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t].[Id] = [t1].[TaskId]
+ORDER BY [t].[Id], [t0].[Id]
+2025-03-28 08:34:35.797 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:34:35.797 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:34:35.797 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:35.798 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 11.8949ms
+2025-03-28 08:34:51.119 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:34:51.120 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:34:51.122 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:34:51.122 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:34:51.122 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 3.1208ms
+2025-03-28 08:34:51.134 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-28 08:34:51.135 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:34:51.135 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2906ms
+2025-03-28 08:34:51.135 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:34:51.135 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-28 08:34:51.135 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:34:51.135 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:34:51.136 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 1.0821ms
+2025-03-28 08:34:51.136 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:34:51.136 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:34:51.136 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:34:51.136 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.7325ms
+2025-03-28 08:34:51.273 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-28 08:34:51.274 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:34:51.281 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:34:51.281 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 7.9444ms
+2025-03-28 08:34:53.259 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:34:53.259 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:34:53.259 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:34:53.260 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:34:53.260 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 1.1228ms
+2025-03-28 08:34:53.275 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-28 08:34:53.275 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:34:53.275 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-28 08:34:53.275 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2205ms
+2025-03-28 08:34:53.275 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:34:53.275 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:34:53.275 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:34:53.275 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:34:53.275 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:34:53.275 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:34:53.275 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.752ms
+2025-03-28 08:34:53.275 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.7579ms
+2025-03-28 08:34:53.422 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-28 08:34:53.422 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:34:53.436 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:34:53.437 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 14.9317ms
+2025-03-28 08:34:55.253 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:34:55.254 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:55.263 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM [Tasks] AS [t]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t].[Id] = [t1].[TaskId]
+ORDER BY [t].[Id], [t0].[Id]
+2025-03-28 08:34:55.264 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:34:55.264 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:34:55.265 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:34:55.265 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 11.39ms
+2025-03-28 08:34:56.454 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:34:56.455 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:34:56.455 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:34:56.455 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:34:56.455 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 0.9323ms
+2025-03-28 08:34:56.481 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:34:56.481 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-28 08:34:56.482 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-28 08:34:56.482 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.1628ms
+2025-03-28 08:34:56.482 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:34:56.482 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:34:56.482 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:34:56.482 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:34:56.482 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:34:56.482 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:34:56.482 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.7857ms
+2025-03-28 08:34:56.482 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.9059ms
+2025-03-28 08:34:56.649 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-28 08:34:56.651 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:34:56.657 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:34:56.657 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 8.9203ms
+2025-03-28 08:38:26.792 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:38:26.793 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:38:26.793 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:38:26.794 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:38:26.794 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 1.2815ms
+2025-03-28 08:38:26.802 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:38:26.803 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.1844ms
+2025-03-28 08:38:26.803 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-28 08:38:26.804 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-28 08:38:26.804 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:38:26.804 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:38:26.804 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:38:26.804 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 0.7549ms
+2025-03-28 08:38:26.804 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:38:26.804 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:38:26.804 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:38:26.804 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 0.5704ms
+2025-03-28 08:38:26.958 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-28 08:38:26.959 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:38:26.967 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:38:26.967 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 9.2784ms
+2025-03-28 08:38:53.257 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-28 08:38:53.533 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-28 08:38:53.535 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-28 08:38:53.535 +07:00 [INF] Hosting environment: Development
+2025-03-28 08:38:53.535 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.Api
+2025-03-28 08:38:56.082 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:38:56.121 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-28 08:38:56.206 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:38:56.613 +07:00 [WRN] The foreign key property 'TaskItem.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-03-28 08:38:56.796 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-03-28 08:38:56.797 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-03-28 08:38:56.905 +07:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-28 08:38:57.105 +07:00 [INF] Executed DbCommand (36ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:38:57.196 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:38:57.203 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:38:57.217 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:38:57.224 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 1143.2759ms
+2025-03-28 08:42:59.751 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:42:59.768 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:42:59.789 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:42:59.793 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:42:59.794 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 42.883ms
+2025-03-28 08:42:59.799 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:42:59.800 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-28 08:42:59.800 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-28 08:42:59.801 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 1.5867ms
+2025-03-28 08:42:59.813 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:42:59.813 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:42:59.816 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:42:59.816 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:42:59.816 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:42:59.816 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:42:59.816 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 16.7467ms
+2025-03-28 08:42:59.816 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 16.5728ms
+2025-03-28 08:42:59.958 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-28 08:42:59.960 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:42:59.979 +07:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-28 08:43:00.130 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:43:00.130 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 172.4307ms
+2025-03-28 08:43:10.065 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks?pageSize=1 - null null
+2025-03-28 08:43:10.067 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:43:10.071 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:43:10.120 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks?pageSize=1 - 500 null application/json 54.9678ms
+2025-03-28 08:43:13.552 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks?pageSize=1 - null null
+2025-03-28 08:43:13.554 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:43:13.554 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:43:13.555 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks?pageSize=1 - 500 null application/json 2.7984ms
+2025-03-28 08:43:36.410 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-28 08:43:36.658 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-28 08:43:36.659 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-28 08:43:36.659 +07:00 [INF] Hosting environment: Development
+2025-03-28 08:43:36.659 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.Api
+2025-03-28 08:44:35.594 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks?pageNumber=&pageSize= - null null
+2025-03-28 08:44:35.636 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-28 08:44:35.733 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:44:35.736 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:44:35.791 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks?pageNumber=&pageSize= - 500 null application/json 199.34ms
+2025-03-28 08:45:00.236 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-28 08:45:00.254 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:45:00.280 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-28 08:45:00.284 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-28 08:45:00.284 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 48.9757ms
+2025-03-28 08:45:00.289 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-28 08:45:00.289 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-28 08:45:00.289 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-28 08:45:00.291 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 1.7883ms
+2025-03-28 08:45:00.303 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:45:00.303 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:45:00.307 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:45:00.307 +07:00 [INF] Setting HTTP status code 304.
+2025-03-28 08:45:00.307 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-28 08:45:00.307 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-28 08:45:00.307 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 17.6219ms
+2025-03-28 08:45:00.307 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 17.4513ms
+2025-03-28 08:45:00.434 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-28 08:45:00.438 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:45:00.457 +07:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-28 08:45:00.633 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-28 08:45:00.633 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 198.6281ms
+2025-03-28 08:45:04.019 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:45:04.023 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:45:04.085 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:45:04.086 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 500 null application/json 66.4771ms
+2025-03-28 08:45:30.313 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-28 08:45:30.550 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-28 08:45:30.551 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-28 08:45:30.551 +07:00 [INF] Hosting environment: Development
+2025-03-28 08:45:30.551 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.Api
+2025-03-28 08:45:30.744 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:45:30.787 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-28 08:45:30.884 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:45:31.374 +07:00 [WRN] The foreign key property 'TaskItem.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-03-28 08:45:31.849 +07:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-28 08:45:32.120 +07:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM [Tasks] AS [t]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t].[Id] = [t1].[TaskId]
+ORDER BY [t].[Id], [t0].[Id]
+2025-03-28 08:45:32.202 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:45:32.209 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:45:32.222 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:45:32.229 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 1486.3746ms
+2025-03-28 08:46:33.694 +07:00 [INF] Application is shutting down...
+2025-03-28 08:46:41.632 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-28 08:46:41.919 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-28 08:46:41.921 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-28 08:46:41.921 +07:00 [INF] Hosting environment: Development
+2025-03-28 08:46:41.921 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.Api
+2025-03-28 08:46:46.392 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:46:46.431 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-28 08:46:46.878 +07:00 [WRN] The foreign key property 'TaskItem.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-03-28 08:46:47.306 +07:00 [INF] Executed DbCommand (29ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-03-28 08:46:47.414 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-28 08:46:47.441 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-28 08:46:47.452 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:47.558 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-03-28 08:46:47.558 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-03-28 08:46:47.589 +07:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-28 08:46:47.620 +07:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:46:47.676 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:46:47.683 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:46:47.702 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:47.710 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 1320.2063ms
+2025-03-28 08:46:52.632 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:46:52.650 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:52.713 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:46:52.714 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:46:52.715 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:46:52.715 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:52.715 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 83.2686ms
+2025-03-28 08:46:53.477 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:46:53.489 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:53.501 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:46:53.503 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:46:53.503 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:46:53.503 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:53.503 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 26.029ms
+2025-03-28 08:46:53.901 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:46:53.902 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:53.907 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:46:53.908 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:46:53.908 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:46:53.909 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:53.909 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 7.3761ms
+2025-03-28 08:46:54.251 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:46:54.252 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:54.257 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:46:54.258 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:46:54.258 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:46:54.258 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:54.258 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 6.9254ms
+2025-03-28 08:46:54.609 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:46:54.609 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:54.614 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:46:54.615 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:46:54.615 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:46:54.615 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:54.615 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 6.4868ms
+2025-03-28 08:46:54.951 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:46:54.952 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:54.958 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:46:54.959 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:46:54.959 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:46:54.959 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:54.959 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 7.9792ms
+2025-03-28 08:46:55.323 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:46:55.323 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:55.329 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:46:55.330 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:46:55.330 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:46:55.330 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:55.330 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 7.2812ms
+2025-03-28 08:46:55.778 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-28 08:46:55.779 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:55.785 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:46:55.786 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:46:55.786 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:46:55.787 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:46:55.787 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 8.3757ms
+2025-03-28 08:47:02.776 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks?pageSize=1 - null null
+2025-03-28 08:47:02.777 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:47:02.796 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:47:02.797 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:47:02.797 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:47:02.797 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:47:02.798 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks?pageSize=1 - 200 null application/json; charset=utf-8 21.3018ms
+2025-03-28 08:47:44.439 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks?pageSize=1 - null null
+2025-03-28 08:47:44.440 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:47:44.465 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:47:44.467 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:47:44.468 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:47:44.469 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:47:44.469 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks?pageSize=1 - 200 null application/json; charset=utf-8 29.7452ms
+2025-03-28 08:47:48.791 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks?pageSize=2 - null null
+2025-03-28 08:47:48.792 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:47:48.797 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:47:48.797 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:47:48.797 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:47:48.798 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:47:48.798 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks?pageSize=2 - 200 null application/json; charset=utf-8 6.7598ms
+2025-03-28 08:47:58.253 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks?pageSize=1 - null null
+2025-03-28 08:47:58.254 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:47:58.277 +07:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:47:58.278 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:47:58.278 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:47:58.278 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:47:58.278 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks?pageSize=1 - 200 null application/json; charset=utf-8 24.7915ms
+2025-03-28 08:48:02.128 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks?pageNumber=2&pageSize=1 - null null
+2025-03-28 08:48:02.129 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:48:02.130 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-03-28 08:48:02.130 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-03-28 08:48:02.135 +07:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-28 08:48:02.161 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t2].[Id], [t2].[AssigneeId], [t2].[CategoryId], [t2].[CreatedAt], [t2].[Description], [t2].[Duedate], [t2].[IsCompleted], [t2].[Title], [t2].[UserId], [t2].[UserId1], [t0].[Id], [t0].[FileName], [t0].[FileUrl], [t0].[TaskId], [t0].[UploadedAt], [t1].[Id], [t1].[Content], [t1].[CreatedAt], [t1].[TaskId], [t1].[UserId]
+FROM (
+    SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+    FROM [Tasks] AS [t]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+) AS [t2]
+LEFT JOIN [TaskAttachments] AS [t0] ON [t2].[Id] = [t0].[TaskId]
+LEFT JOIN [TaskComments] AS [t1] ON [t2].[Id] = [t1].[TaskId]
+ORDER BY [t2].[Id], [t0].[Id]
+2025-03-28 08:48:02.164 +07:00 [INF] Setting HTTP status code 200.
+2025-03-28 08:48:02.164 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-28 08:48:02.164 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-28 08:48:02.164 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks?pageNumber=2&pageSize=1 - 200 null application/json; charset=utf-8 35.9951ms
+2025-03-28 08:48:15.540 +07:00 [INF] Application is shutting down...

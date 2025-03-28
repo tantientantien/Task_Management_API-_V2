@@ -14768,3 +14768,97 @@ WHERE [a].[UserId] = @__userId_0
 2025-03-27 22:52:59.079 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
 2025-03-27 22:52:59.079 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 14.3398ms
 2025-03-27 22:53:00.481 +07:00 [INF] Application is shutting down...
+2025-03-27 23:28:24.250 +07:00 [INF] User profile is available. Using 'C:\Users\tanti\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-27 23:28:24.485 +07:00 [INF] Now listening on: http://localhost:5179
+2025-03-27 23:28:24.487 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-27 23:28:24.487 +07:00 [INF] Hosting environment: Development
+2025-03-27 23:28:24.487 +07:00 [INF] Content root path: D:\Projects\TaskManagement\src\TaskManagement.Api
+2025-03-27 23:28:25.414 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/v1 - null null
+2025-03-27 23:28:25.459 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-03-27 23:28:26.057 +07:00 [WRN] The foreign key property 'TaskItem.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2025-03-27 23:28:26.509 +07:00 [INF] Executed DbCommand (31ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0
+2025-03-27 23:28:26.610 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-27 23:28:26.629 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-27 23:28:26.637 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-27 23:28:26.671 +07:00 [INF] Write content with HTTP Response ContentType of text/html
+2025-03-27 23:28:26.678 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2025-03-27 23:28:26.685 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/v1 - 200 null text/html 1272.012ms
+2025-03-27 23:28:26.687 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - null null
+2025-03-27 23:28:26.687 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - null null
+2025-03-27 23:28:26.689 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-27 23:28:26.691 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.0487ms
+2025-03-27 23:28:26.695 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-27 23:28:26.695 +07:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-27 23:28:26.700 +07:00 [INF] Setting HTTP status code 304.
+2025-03-27 23:28:26.700 +07:00 [INF] Setting HTTP status code 304.
+2025-03-27 23:28:26.700 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2025-03-27 23:28:26.700 +07:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2025-03-27 23:28:26.700 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.js - 304 null null 13.792ms
+2025-03-27 23:28:26.700 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/scalar/scalar.aspnetcore.js - 304 null null 13.7883ms
+2025-03-27 23:28:26.869 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/openapi/v1.json - null null
+2025-03-27 23:28:26.884 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-27 23:28:26.902 +07:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-03-27 23:28:27.075 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-03-27 23:28:27.075 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/openapi/v1.json - 200 null application/json;charset=utf-8 206.3654ms
+2025-03-27 23:28:34.515 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/comments/10 - null null
+2025-03-27 23:28:34.529 +07:00 [INF] Executing endpoint 'HTTP: GET /api/comments/{taskId:int}'
+2025-03-27 23:28:34.652 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[@__taskId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Content], [t].[CreatedAt], [t].[TaskId], [t].[UserId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [TaskComments] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[UserId] = [a].[Id]
+WHERE [t].[TaskId] = @__taskId_0
+2025-03-27 23:28:34.679 +07:00 [INF] Setting HTTP status code 200.
+2025-03-27 23:28:34.681 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-27 23:28:34.687 +07:00 [INF] Executed endpoint 'HTTP: GET /api/comments/{taskId:int}'
+2025-03-27 23:28:34.687 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/comments/10 - 200 null application/json; charset=utf-8 172.1016ms
+2025-03-27 23:28:41.029 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/comments/9 - null null
+2025-03-27 23:28:41.032 +07:00 [INF] Executing endpoint 'HTTP: GET /api/comments/{taskId:int}'
+2025-03-27 23:28:41.045 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__taskId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Content], [t].[CreatedAt], [t].[TaskId], [t].[UserId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [TaskComments] AS [t]
+INNER JOIN [AspNetUsers] AS [a] ON [t].[UserId] = [a].[Id]
+WHERE [t].[TaskId] = @__taskId_0
+2025-03-27 23:28:41.046 +07:00 [INF] Setting HTTP status code 200.
+2025-03-27 23:28:41.046 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-27 23:28:41.047 +07:00 [INF] Executed endpoint 'HTTP: GET /api/comments/{taskId:int}'
+2025-03-27 23:28:41.047 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/comments/9 - 200 null application/json; charset=utf-8 17.566ms
+2025-03-27 23:28:47.345 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasks - null null
+2025-03-27 23:28:47.347 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasks/'
+2025-03-27 23:28:47.368 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssigneeId], [t].[CategoryId], [t].[CreatedAt], [t].[Description], [t].[Duedate], [t].[IsCompleted], [t].[Title], [t].[UserId], [t].[UserId1]
+FROM [Tasks] AS [t]
+2025-03-27 23:28:47.371 +07:00 [INF] Setting HTTP status code 200.
+2025-03-27 23:28:47.371 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-27 23:28:47.372 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasks/'
+2025-03-27 23:28:47.373 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasks - 200 null application/json; charset=utf-8 27.1378ms
+2025-03-27 23:28:56.185 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasklabels/9 - null null
+2025-03-27 23:28:56.186 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasklabels/{taskId:int}'
+2025-03-27 23:28:56.206 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[@__taskId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[LabelId], [t].[TaskId], [l].[Id], [l].[Color], [l].[Name]
+FROM [TaskLabels] AS [t]
+INNER JOIN [Labels] AS [l] ON [t].[LabelId] = [l].[Id]
+WHERE [t].[TaskId] = @__taskId_0
+2025-03-27 23:28:56.217 +07:00 [INF] Setting HTTP status code 200.
+2025-03-27 23:28:56.218 +07:00 [INF] Writing value of type 'SuccessResponse`1' as Json.
+2025-03-27 23:28:56.219 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasklabels/{taskId:int}'
+2025-03-27 23:28:56.219 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasklabels/9 - 200 null application/json; charset=utf-8 34.2468ms
+2025-03-27 23:28:59.864 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/tasklabels/10 - null null
+2025-03-27 23:28:59.865 +07:00 [INF] Executing endpoint 'HTTP: GET /api/tasklabels/{taskId:int}'
+2025-03-27 23:28:59.870 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[@__taskId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[LabelId], [t].[TaskId], [l].[Id], [l].[Color], [l].[Name]
+FROM [TaskLabels] AS [t]
+INNER JOIN [Labels] AS [l] ON [t].[LabelId] = [l].[Id]
+WHERE [t].[TaskId] = @__taskId_0
+2025-03-27 23:28:59.870 +07:00 [INF] Setting HTTP status code 404.
+2025-03-27 23:28:59.870 +07:00 [INF] Executed endpoint 'HTTP: GET /api/tasklabels/{taskId:int}'
+2025-03-27 23:28:59.871 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/tasklabels/10 - 404 0 null 6.6199ms
