@@ -1,6 +1,4 @@
 using AutoMapper;
-using Microsoft.AspNetCore.DataProtection.Repositories;
-using TaskManagement.Api.Service;
 
 
 namespace TaskManagement.Api.Endpoints;
@@ -23,12 +21,12 @@ public static class TaskCommentEndpoint
 
 
         // Comment to a task
-        group.MapPost("/{taskId:int}", async (GetCurrentUser currentUser, IMapper mapper, IGenericRepository<TaskComment> repository, int taskId, CommentWriteDto commentDto) =>
+        group.MapPost("/{taskId:int}", async (UserManagement userManagement, IMapper mapper, IGenericRepository<TaskComment> repository, int taskId, CommentWriteDto commentDto) =>
         {
             if (commentDto is null)
                 return Results.BadRequest();
 
-            int? userId = currentUser.GetCurrentUserId();
+            int? userId = userManagement.GetCurrentUserId();
             if (!userId.HasValue || userId.Value <= 0)
                 return Results.Unauthorized();
 

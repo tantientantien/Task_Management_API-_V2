@@ -1,5 +1,4 @@
 using AutoMapper;
-using Newtonsoft.Json;
 
 namespace TaskManagement.Api.Endpoints;
 
@@ -13,7 +12,7 @@ public static class TaskLabelEndpoint
             var taskLabels = await repository.FindAsync(tl => tl.TaskId == taskId, tl => tl.Label);
 
             if (!taskLabels.Any())
-                return Results.NotFound();
+                return Results.NoContent();
 
             var labelDtos = mapper.Map<IEnumerable<LabelDataDto>>(taskLabels.Select(tl => tl.Label));
             return Results.Ok(SuccessResponse<IEnumerable<LabelDataDto>>.Create(labelDtos));

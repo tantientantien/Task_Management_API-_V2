@@ -1,15 +1,14 @@
-using System.ComponentModel;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
-namespace TaskManagement.Api.Service;
 
-public class GetCurrentUser
+public class UserManagement
 {
     private readonly UserManager<User> _userManager;
     private readonly IHttpContextAccessor _httpContextAccessor;
 
-    public GetCurrentUser(UserManager<User> userManager, IHttpContextAccessor httpContextAccessor)
+    public UserManagement(UserManager<User> userManager, IHttpContextAccessor httpContextAccessor)
     {
         _userManager = userManager;
         _httpContextAccessor = httpContextAccessor;
@@ -25,6 +24,11 @@ public class GetCurrentUser
         }
 
         return await _userManager.FindByIdAsync(userId);
+    }
+
+    public async Task<List<User>> GetAllUserAsync()
+    {
+        return await _userManager.Users.ToListAsync();
     }
 
     public int GetCurrentUserId()
