@@ -43,5 +43,8 @@ class MappingProfile : Profile
 
         CreateMap<CommentWriteDto, TaskComment>()
             .ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(src => src.CreatedAt ?? DateTime.UtcNow));
+
+
+        CreateMap<TaskAttachment, AttachmentDataDto>().ReverseMap();
     }
 }

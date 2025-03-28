@@ -1,5 +1,4 @@
 using AutoMapper;
-using TaskManagement.Api.Service;
 
 namespace TaskManagement.Api.Endpoints;
 

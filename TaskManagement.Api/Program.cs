@@ -5,7 +5,6 @@ using Serilog;
 using TaskManagement.Api.Endpoints;
 using TaskManagement.Api.Extensions;
 using TaskManagement.Api.Mappings;
-using TaskManagement.Api.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,12 +35,13 @@ builder.Services.AddIdentityApiEndpoints<User>()
     .AddDefaultTokenProviders();
 
 // builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddScoped<IAzureService, AzureService>();
+builder.Services.AddScoped<UserManagement>();
+builder.Services.AddScoped<UserPermission>();
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-builder.Services.AddHttpContextAccessor();
-builder.Services.AddScoped<GetCurrentUser>();
-builder.Services.AddScoped<UserPermission>();
 
 var app = builder.Build();
 
@@ -72,7 +72,7 @@ app.MapGroup("/api/categories").MapCategoryEndpoints().RequireAuthorization().Wi
 app.MapGroup("/api/labels").MapLabelEndpoints().RequireAuthorization().WithTags("Label");
 app.MapGroup("/api/tasklabels").MapTaskLabelEndpoints().RequireAuthorization().WithTags("Task Label");
 app.MapGroup("/api/comments").MapTaskCommentEndpoints().RequireAuthorization().WithTags("Task Comment");
-
+app.MapGroup("/api/attachments").MapTaskAttachmentEndpoints().RequireAuthorization().WithTags("Attachment");
 
 
 

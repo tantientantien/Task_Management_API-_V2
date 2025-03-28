@@ -1,20 +1,17 @@
 using AutoMapper;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
-using Newtonsoft.Json;
-using TaskManagement.Api.Service;
 
 public static class UserEndpoints
 {
     public static RouteGroupBuilder MapUserEndpoints(this RouteGroupBuilder group)
     {
-        group.MapGet("/me", async (IMapper mapper, GetCurrentUser currentUser) =>
+        group.MapGet("/me", async (IMapper mapper, UserManagement userManagement) =>
         {
-            var user = await currentUser.GetCurrentUserAsync();
+            var user = await userManagement.GetCurrentUserAsync();
             if (user is null)
                 return Results.NotFound();
 
-            var roles = await currentUser.GetCurrentUserRolesAsync();
+            var roles = await userManagement.GetCurrentUserRolesAsync();
             var userDto = mapper.Map<UserDataDto>(user);
             userDto.Roles = roles;
 
@@ -25,6 +22,15 @@ public static class UserEndpoints
         {
             await signInManager.SignOutAsync();
             return Results.Ok();
+        });
+
+        group.MapGet("/", async (IMapper mapper, UserManagement userManagement) =>
+        {
+            var users = await userManagement.GetAllUserAsync();
+            if(users is null)
+                return Results.NoContent();
+            var userDtos = mapper.Map<IEnumerable<UserDataDto>>(users);
+            return Results.Ok(SuccessResponse<IEnumerable<UserDataDto>>.Create(userDtos));
         });
 
         return group;

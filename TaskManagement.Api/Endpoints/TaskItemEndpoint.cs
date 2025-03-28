@@ -1,7 +1,6 @@
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
-using TaskManagement.Api.Service;
+
 
 namespace TaskManagement.Api.Endpoints;
 
@@ -42,12 +41,12 @@ public static class TaskItemEndpoint
         });
 
         // Create a new Task
-        group.MapPost("/", async (IMapper mapper, GetCurrentUser currentUser, IGenericRepository<TaskItem> repository, TaskWriteDto newTaskItem) =>
+        group.MapPost("/", async (IMapper mapper, UserManagement userManagement, IGenericRepository<TaskItem> repository, TaskWriteDto newTaskItem) =>
         {
             if (newTaskItem is null)
                 return Results.BadRequest();
 
-            int? userId = currentUser.GetCurrentUserId();
+            int? userId = userManagement.GetCurrentUserId();
             if (!userId.HasValue || userId.Value <= 0)
                 return Results.Unauthorized();
 
