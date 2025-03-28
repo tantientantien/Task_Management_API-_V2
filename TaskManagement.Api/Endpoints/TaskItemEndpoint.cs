@@ -1,4 +1,6 @@
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using TaskManagement.Api.Service;
 
 namespace TaskManagement.Api.Endpoints;
@@ -8,9 +10,20 @@ public static class TaskItemEndpoint
     public static RouteGroupBuilder MapTaskItemEndpoints(this RouteGroupBuilder group)
     {
         // Get all tasks
-        group.MapGet("/", async (IMapper mapper, IGenericRepository<TaskItem> repository) =>
+        group.MapGet("/", async (IMapper mapper, IGenericRepository<TaskItem> repository, int? pageNumber = 1, int? pageSize = 10) =>
         {
-            var tasks = await repository.GetAllAsync();
+            if (pageNumber < 1 || pageSize < 1)
+                return Results.BadRequest();
+
+            var skip = (pageNumber.Value - 1) * pageSize.Value;
+
+            var tasks = await repository.Query()
+                .Include(task => task.Attachments)
+                .Include(task => task.TaskComments)
+                .Skip(skip)
+                .Take(pageSize.Value)
+                .ToListAsync();
+
             if (!tasks.Any())
                 return Results.NoContent();
 
@@ -40,7 +53,7 @@ public static class TaskItemEndpoint
 
             var task = mapper.Map<TaskItem>(newTaskItem);
             task.UserId = userId.Value;
-            
+
             await repository.AddAsync(task);
             var taskDto = mapper.Map<TaskDataDto>(task);
             return Results.Created($"/api/tasks/{task.Id}", SuccessResponse<TaskDataDto>.Create(taskDto));
@@ -56,7 +69,7 @@ public static class TaskItemEndpoint
             if (taskItem is null)
                 return Results.NotFound();
 
-            if(!await permission.isAdminOrCreatorOrAssignee(taskItem.UserId, taskItem.AssigneeId))
+            if (!await permission.isAdminOrCreatorOrAssignee(taskItem.UserId, taskItem.AssigneeId))
                 return Results.Forbid();
 
             mapper.Map(updateTaskItem, taskItem);
@@ -72,7 +85,7 @@ public static class TaskItemEndpoint
             if (task is null)
                 return Results.NotFound();
 
-            if(!await permission.isAdminOrCreator(task.UserId))
+            if (!await permission.isAdminOrCreator(task.UserId))
                 return Results.Forbid();
 
             await repository.DeleteAsync(id);

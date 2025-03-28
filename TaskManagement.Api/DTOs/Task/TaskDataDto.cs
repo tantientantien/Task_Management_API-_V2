@@ -6,6 +6,8 @@ public class TaskDataDto
     public bool IsCompleted { get; set; }
     public int UserId { get; set; }
     public int AssigneeId { get; set; }
+    public int AttachmentCount { get; set; }
+    public int CommentCount { get; set; }
     public DateTime CreatedAt { get; set; }
     public int CategoryId { get; set; }
     public DateTime Duedate { get; set; }

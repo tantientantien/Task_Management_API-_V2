@@ -17,16 +17,16 @@ class MappingProfile : Profile
 
         CreateMap<Label, LabelDataDto>();
         CreateMap<LabelWriteDto, Label>();
-        
+
         CreateMap<TaskLabel, LabelDataDto>()
             .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.LabelId))
             .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Label.Name))
             .ForMember(dest => dest.Color, opt => opt.MapFrom(src => src.Label.Color));
 
 
-        CreateMap<TaskItem, TaskDataDto>();
-            // .ForMember(dest => dest.AttachmentCount, opt => opt.MapFrom(src => src.Attachments.Count))
-            // .ForMember(dest => dest.CommentCount, opt => opt.MapFrom(src => src.TaskComments.Count));
+        CreateMap<TaskItem, TaskDataDto>()
+            .ForMember(dest => dest.AttachmentCount, opt => opt.MapFrom(src => src.Attachments.Count))
+            .ForMember(dest => dest.CommentCount, opt => opt.MapFrom(src => src.TaskComments.Count));
         CreateMap<TaskWriteDto, TaskItem>();
         CreateMap<TaskPatchDto, TaskItem>()
             .ForMember(dest => dest.Title, opt => opt.Condition(src => src.Title != null))
